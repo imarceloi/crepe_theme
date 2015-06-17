@@ -1,0 +1,20 @@
+* { margin: 0; padding: 0; border: 0 }
+
+@media all and (min-width: 1280px) {
+
+}
+@media all and (max-width: 1279px) and (min-width: 960px) {
+
+}
+@media all and (max-width: 959px) {
+
+}
+
+.autores { background: #e5e3df; bottom: 0; border-radius: 5px 5px 0 0; padding: 5px 10px; position: fixed; left: 38%; width: 345px }
+.autores p { color: #D73347; font: 13px Tahoma, Arial }
+.autores p a { color: #D73347;	text-decoration: none }
+.autores p a:hover { text-decoration: underline }
+
+.infoBox { background-color: #FFF; font-family: Arial, Helvetica, sans-serif; font-size: 14px; border: 2px solid #502c23; border-radius: 3px; margin-top: 10px; min-height: 20px; text-align:center; margin-left:128px; }
+.infoBox p { padding: 15px; font-size:20px; color:#666; }
+.infoBox:before { border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #502c23; top: -10px; content: ""; height: 0; position: absolute; width: 0; left: 4px }

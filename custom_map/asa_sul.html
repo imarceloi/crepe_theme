@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Custom Map</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+
+	<div id="mapa"></div>
+	
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            function medidas () {
+                /*CALCULOS DE TELA*/
+                var alturaTela = $(window).height();
+                var larguraTela = $(window).width();
+                
+                $('#mapa').css({'height': 400, 'width': larguraTela});
+            };
+            /*FECHA A FUNÇÃO rodaConfigs*/
+            medidas();
+            /*RODA A FUNÇÃO rodaConfigs*/
+
+            /*RECALCULA AS FONFIGS NO REDIMENSIONAMENTO*/
+            window.onresize = function(){
+                medidas();
+            };
+
+        });
+    </script>
+    <script src="js/infobox.js"></script>
+    <script src="js/markerclusterer.js"></script>
+    <script src="js/mapa_asa_sul.js"></script>
+
+</body>
+
+</html>
